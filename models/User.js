@@ -10,7 +10,8 @@ const schema = {
     required: true
   },
   'favsId': [{
-    type: String
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Fav"
   }]
 }
 
