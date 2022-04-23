@@ -3,6 +3,8 @@ const loginRouter = require('./routes/login')
 
 const app = express()
 
+require('./database')
+
 const PORT = 3001
 
 app.use('/auth/local/login', loginRouter)
