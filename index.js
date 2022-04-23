@@ -6,6 +6,8 @@ const app = express()
 
 require('./database')
 
+app.use(express.json())
+
 const PORT = 3001
 
 app.use('/auth/local/login', loginRouter)
